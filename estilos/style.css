@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'adobe1';
+  src: url(/fonts/coolvetica\ rg.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'adobe2';
+  src: url(/fonts/coolvetica\ condensed\ rg.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'adobe3';
+  src: url(/fonts/coolvetica\ compressed\ hv.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'adobe4';
+  src: url(/fonts/coolvetica\ crammed\ rg.otf) format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --color1: #4DD8FF;
+  --color2: #45C3E6;
+  --color3: #39A2BF;
+  --color4: #266C80;
+  --color5: #0F2930;
+
+  --font1: 'adobe1';
+  --font2: 'adobe2';
+  --font3: 'adobe3';
+  --font4: 'adobe4';
+  --fonttitle: "Bebas Neue", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--color1), var(--color4));
+  color: white;
+  text-align: center;
+  height: 150px;
+}
+
+header > h1 {
+  padding-top: 20px;
+  font: normal normal 3em var(--fonttitle);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.20);
+}
+
+header > p {
+  font: normal normal 1.2em Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.20);
+  max-width: 500px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+nav {
+  background-color: var(--color4);
+  padding: 10px;
+}
+
+nav > a {
+  font: normal bold 1em Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition-duration: .3s;
+}
+
+nav > a:hover {
+  background-color: var(--color3);
+  color: var(--color5);
+}
